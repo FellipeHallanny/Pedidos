@@ -8,7 +8,7 @@ namespace Pedidos.Persistence.Contextos
         public PedidoContext(DbContextOptions<PedidoContext> options)
         : base(options) {}
 
-        public DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<Solicitacao> Solicitacoes { get; set; }
         public DbSet<Itens> Itens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

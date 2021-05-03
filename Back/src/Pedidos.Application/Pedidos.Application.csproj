@@ -9,8 +9,4 @@
     <ProjectReference Include="..\Pedidos.Persistence\Pedidos.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Contratos\" />
-  </ItemGroup>
-
 </Project>

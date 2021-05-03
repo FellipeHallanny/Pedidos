@@ -10,6 +10,8 @@ using Microsoft.OpenApi.Models;
 using Pedidos.Application;
 using Pedidos.Application.Contratos;
 using Pedidos.Domain;
+using Pedidos.Domain.Commands.Handlers;
+using Pedidos.Domain.Commands.Handlers.Contratos;
 using Pedidos.Persistence;
 using Pedidos.Persistence.Contextos;
 using Pedidos.Persistence.Contratos;
@@ -36,9 +38,10 @@ namespace Pedidos.API
                         x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     );
 
-            services.AddScoped<IPedidoService, PedidoService>();
+            services.AddScoped<ISolicitacaoService, SolicitacaoService>();
             services.AddScoped<IGeralPersistence, GeralPersistence>();
-            services.AddScoped<IPedidoPersistence, PedidoPersistence>();
+            services.AddScoped<ISolicitacaoPersistence, SolicitacaoPersistence>();
+            services.AddScoped<ICreateStatusHandler, CreateStatusHandler>();
 
             services.AddCors();
             services.AddSwaggerGen(c =>
@@ -86,7 +89,7 @@ namespace Pedidos.API
             listaItens.Add(itemA);
             listaItens.Add(itemB);
 
-            var pedido = new Pedido()
+            var pedido = new Solicitacao()
             {
                 Itens = listaItens
             };

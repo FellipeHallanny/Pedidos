@@ -7,31 +7,31 @@ using Pedidos.Persistence.Contratos;
 
 namespace Pedidos.Persistence
 {
-    public class PedidoPersistence : IPedidoPersistence
+    public class SolicitacaoPersistence : ISolicitacaoPersistence
     {
         private readonly PedidoContext _context;
 
-        public PedidoPersistence(PedidoContext context)
+        public SolicitacaoPersistence(PedidoContext context)
         {
             _context = context;
 
         }
-        public async Task<Pedido> GetAllPedidoByIdAsync(int pedidoId)
+        public async Task<Solicitacao> GetAllSolicitacaoByIdAsync(int id)
         {
-            IQueryable<Pedido> query = _context.Pedidos
+            IQueryable<Solicitacao> query = _context.Solicitacoes
                             .Include(e => e.Itens);
 
-            query = query.AsNoTracking().OrderBy(e => e.Id).Where(e => e.Id == pedidoId);
+            query = query.AsNoTracking().OrderBy(e => e.Pedido).Where(e => e.Pedido == id);
 
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<Pedido[]> GetAllPedidosAsync()
+        public async Task<Solicitacao[]> GetAllSolicitacoesAsync()
         {
-            IQueryable<Pedido> query = _context.Pedidos
+            IQueryable<Solicitacao> query = _context.Solicitacoes
                             .Include(e => e.Itens);
 
-            query = query.AsNoTracking().OrderBy(e => e.Id);
+            query = query.AsNoTracking().OrderBy(e => e.Pedido);
 
             return await query.ToArrayAsync();
         }
