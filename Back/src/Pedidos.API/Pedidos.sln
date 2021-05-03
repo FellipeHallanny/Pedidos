@@ -5,11 +5,13 @@ VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.API", "Pedidos.API.csproj", "{546FEF8E-6B92-49D8-85E0-0ED63B7CF93A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Domain", "..\Pedidos.Domain\Pedidos.Domain.csproj", "{2E68967F-C332-487B-985E-4FEF7E50CFD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Domain", "..\Pedidos.Domain\Pedidos.Domain.csproj", "{2E68967F-C332-487B-985E-4FEF7E50CFD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Persistence", "..\Pedidos.Persistence\Pedidos.Persistence.csproj", "{52E83601-E433-49B6-92C2-F721D2F69942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Persistence", "..\Pedidos.Persistence\Pedidos.Persistence.csproj", "{52E83601-E433-49B6-92C2-F721D2F69942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Application", "..\Pedidos.Application\Pedidos.Application.csproj", "{A7FC0E40-FEC4-4ADE-83DD-2C5854F02C76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Application", "..\Pedidos.Application\Pedidos.Application.csproj", "{A7FC0E40-FEC4-4ADE-83DD-2C5854F02C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidoTest", "..\PedidoTest\PedidoTest.csproj", "{7A43E448-D249-4E83-9913-9CCED6773B59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,18 @@ Global
 		{A7FC0E40-FEC4-4ADE-83DD-2C5854F02C76}.Release|x64.Build.0 = Release|Any CPU
 		{A7FC0E40-FEC4-4ADE-83DD-2C5854F02C76}.Release|x86.ActiveCfg = Release|Any CPU
 		{A7FC0E40-FEC4-4ADE-83DD-2C5854F02C76}.Release|x86.Build.0 = Release|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Debug|x64.Build.0 = Debug|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Debug|x86.Build.0 = Debug|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Release|x64.ActiveCfg = Release|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Release|x64.Build.0 = Release|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Release|x86.ActiveCfg = Release|Any CPU
+		{7A43E448-D249-4E83-9913-9CCED6773B59}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
